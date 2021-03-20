@@ -1,0 +1,33 @@
+{
+  "name": "assignment4-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon -w uiserver.js -w .env uiserver.js",
+    "lint": "eslint . --ignore-pattern public",
+    "watch": "babel src --presets @babel/react --out-dir public --watch --verbose",
+    "compile": "babel src --presets @babel/react --out-dir public",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-express": "^2.21.0",
+    "dotenv": "^6.2.0",
+    "express": "^4.17.1",
+    "graphql": "^0.13.2",
+    "mongodb": "^3.6.5",
+    "nodemon": "^1.19.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-react": "^7.12.10",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.22.0"
+  }
+}
